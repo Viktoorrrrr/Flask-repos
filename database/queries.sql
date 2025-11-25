@@ -6,6 +6,36 @@
 --                        student_id INTEGER,
 --                        subject TEXT NOT NULL,
 --                        mark INTEGER);
-INSERT INTO Students(firstname, lastname, dob)
-            VALUES('Jim', 'Smith', '26.09.2007');
+--INSERT INTO Students(firstname, lastname, dob)
+--            VALUES('Jim', 'Smith', '26.09.2007');
+--INSERT INTO Students(firstname, lastname, dob) VALUES
+--                    ('Mary', 'Jones', '03/04/2007'),
+--                   ('Bob', 'Bobby', '10/01/2007');
+--INSERT INTO Students(firstname, lastname, dob) VALUES
+--                    ('Josey', 'Wales', '23/10/2007'),
+--                    ('Tabitha', 'Johnson', '28/02/2007'),
+--                    ('Jennifer', 'Rose', '14/09/2007'),
+--                    ('Bart', 'Michael', '11/10/2007'),
+--                    ('Tom', 'Penn', '19/07/2007');
+--INSERT INTO Marks(student_id, subject, mark) VALUES
+--                 (1, 'English', 50),
+--                 (1, 'Maths', 100),
+--                 (2, 'English', 67),
+--                 (2, 'Science', 80),
+--                 (3, 'English', 24),
+--                 (4, 'English', 97),
+--                 (5, 'Maths', 82),
+--                 (5, 'Science', 5);
+--UPDATE students SET firstname = 'Nick'
+    --WHERE id = '3';
+--INSERT INTO Students(firstname, lastname, dob) VALUES
+--                    ('Mary', 'Jones', '03/04/2007');
+--DELETE FROM Marks
+--    WHERE mark < 25;
+--DELETE FROM Marks
+ --   WHERE mark > 100;
+--SELECT * FROM Marks;'
+SELECT student_id, Students.firstname, Students.lastname, Students.dob, Marks.subject, Marks.mark
+FROM STUDENTS JOIN Marks
+ON Students.id=Marks.student_id
 
